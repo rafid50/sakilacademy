@@ -2,17 +2,24 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scrollbar-width: thin;
+  scrollbar-color: var(--pro-primary) var(--pro-secondary);
 }
 
 :root {
+  --pro-primary: #705eec;
+  --pro-secondary: #aa64e8;
   --e-global-color-primary: #705eec;
   --e-global-color-secondary: #aa64e8;
+  --e-global-color-d86679e: #f6f3fc;
 }
 
-html,
-body {
+html {
   height: 100%;
-  overflow: hidden;
+}
+
+body {
+  min-height: 100%;
 }
 
 body {
@@ -147,7 +154,7 @@ img.emoji {
   justify-content: space-between;
   gap: 40px;
   padding: 20px 80px;
-  flex: 1;
+  min-height: calc(100vh - 110px);
   overflow: hidden;
   background:
     radial-gradient(
@@ -225,4 +232,46 @@ img.emoji {
   width: auto;
   height: auto;
   display: block;
+}
+
+/* Motivational banner */
+.motivational-banner {
+  background:
+    linear-gradient(
+      90deg,
+      rgb(from var(--e-global-color-primary) r g b / 80%),
+      rgb(from var(--e-global-color-secondary) r g b / 80%)
+    ),
+    url("img/second-bg.webp");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 70px 80px;
+  text-align: center;
+}
+
+.motivational-banner h4 {
+  font-family: "Anek Bangla", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--e-global-color-d86679e);
+  line-height: 1.2em;
+}
+
+.motivational-banner .banner-underline {
+  font-family: "Anek Bangla", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .motivational-banner {
+    padding: 50px 24px;
+  }
+
+  .motivational-banner p {
+    font-size: 26px;
+  }
 }
