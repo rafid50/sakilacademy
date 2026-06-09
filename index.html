@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="bn">
   <head>
     <meta charset="UTF-8" />
@@ -107,153 +107,997 @@
 
     <section class="courses-section">
       <div class="courses-header">
-        <h2>একটা কোর্স সিলেক্ট করে <span class="courses-heading-highlight">শেখা শুরু করুন</span></h2>
+        <h2>
+          একটা কোর্স সিলেক্ট করে
+          <span class="courses-heading-highlight">শেখা শুরু করুন</span>
+        </h2>
         <p class="courses-subtitle">শুধু স্বপ্ন না দেখে স্বপ্নকে বাস্তব করুন</p>
       </div>
 
-      <div class="courses-grid">
+      <div class="courses-carousel-wrapper">
+        <button
+          class="carousel-btn carousel-prev"
+          aria-label="Previous slide"
+          disabled
+        >
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+            <path
+              d="M15 18l-6-6 6-6"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
 
-        <!-- Card 1: AI with ChatGPT -->
-        <div class="course-card">
-          <div class="course-thumbnail thumb-ai">
-            <span class="course-badge badge-beginner">Beginner</span>
-            <button class="bookmark-btn" aria-label="Bookmark">
-              <svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1 1h12v16l-6-3.5L1 17V1z" stroke="#6b7280" stroke-width="1.5" stroke-linejoin="round"/>
-              </svg>
-            </button>
-            <div class="thumb-content thumb-ai-content">
-              <div class="thumb-ai-icons">
-                <div class="ai-icon-circle"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#10a37f"/><path d="M12 6v6l4 2" stroke="white" stroke-width="2" stroke-linecap="round"/></svg></div>
-                <div class="ai-icon-circle" style="background:#7b2d8b"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.5 5 5.5.8-4 3.9.9 5.5L12 15l-4.9 2.2.9-5.5L4 7.8l5.5-.8z" fill="white"/></svg></div>
-                <div class="ai-icon-circle" style="background:#4285f4"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><text x="4" y="17" font-size="13" font-weight="bold" fill="white" font-family="sans-serif">G</text></svg></div>
+        <div class="carousel-viewport">
+          <div class="carousel-track" id="coursesTrack">
+            <!-- Card 1: WordPress Customization -->
+            <div class="course-card">
+              <div class="course-thumbnail thumb-wp">
+                <span class="course-badge badge-beginner">Beginner</span>
+                <button class="bookmark-btn" aria-label="Bookmark">
+                  <svg width="14" height="18" viewBox="0 0 14 18" fill="none">
+                    <path
+                      d="M1 1h12v16l-6-3.5L1 17V1z"
+                      stroke-width="1.5"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+                <div class="thumb-content thumb-wp-content">
+                  <div class="thumb-wp-icons">
+                    <div class="thumb-app-icon">
+                      <svg
+                        width="22"
+                        height="22"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                      >
+                        <circle cx="16" cy="16" r="14" fill="#21759b" />
+                        <text
+                          x="9"
+                          y="22"
+                          font-size="16"
+                          font-weight="900"
+                          fill="white"
+                          font-family="sans-serif"
+                        >
+                          W
+                        </text>
+                      </svg>
+                    </div>
+                    <div class="thumb-app-icon">
+                      <svg
+                        width="22"
+                        height="22"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                      >
+                        <rect width="32" height="32" rx="6" fill="#1e1e1e" />
+                        <circle cx="20" cy="16" r="5" fill="#1abcfe" />
+                        <path d="M10 4h5a5 5 0 010 10h-5V4z" fill="#ff7262" />
+                        <path d="M10 14h5a5 5 0 010 10h-5V14z" fill="#f24e1e" />
+                        <path d="M10 24h5a5 5 0 010 8H10v-8z" fill="#a259ff" />
+                      </svg>
+                    </div>
+                    <div class="thumb-app-icon">
+                      <svg
+                        width="22"
+                        height="22"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                      >
+                        <rect width="32" height="32" rx="6" fill="#92003b" />
+                        <text
+                          x="8"
+                          y="24"
+                          font-size="18"
+                          font-weight="900"
+                          fill="white"
+                          font-family="sans-serif"
+                        >
+                          E
+                        </text>
+                      </svg>
+                    </div>
+                  </div>
+                  <p class="thumb-wp-text-main">ওয়ার্ডপ্রেস</p>
+                  <p class="thumb-wp-text-sub">কাস্টমাইজেশন</p>
+                </div>
               </div>
-              <p class="thumb-bn-title">মাস্টারিং</p>
-              <p class="thumb-bn-sub">প্রম্পট ইঞ্জিনিয়ারিং</p>
-            </div>
-          </div>
-          <div class="course-body">
-            <div class="course-rating">
-              <div class="stars stars-filled">
-                <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+              <div class="course-body">
+                <div class="course-rating">
+                  <div class="stars stars-filled">
+                    <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span
+                    ><span>&#9733;</span><span>&#9733;</span>
+                  </div>
+                  <span class="rating-value">5.00</span>
+                  <span class="rating-count">(37)</span>
+                </div>
+                <h3 class="course-title">
+                  WordPress Customization with WooCommerce
+                </h3>
+                <div class="course-author">
+                  <img
+                    src="img/Ali-Ai.webp"
+                    alt="Ali Hossain"
+                    class="author-avatar"
+                  />
+                  <p class="author-meta">
+                    By <strong>Ali Hossain</strong> In <a href="#">No Code</a>,
+                    <a href="#">WordPress</a>
+                  </p>
+                </div>
               </div>
-              <span class="rating-value">5.00</span>
-              <span class="rating-count">(20)</span>
+              <div class="course-footer">
+                <span class="course-price">1,499.00&#2547;</span>
+                <button class="add-to-cart-btn">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linejoin="round"
+                    />
+                    <line
+                      x1="3"
+                      y1="6"
+                      x2="21"
+                      y2="6"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    />
+                    <path
+                      d="M16 10a4 4 0 01-8 0"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    />
+                  </svg>
+                  Add to cart
+                </button>
+              </div>
             </div>
-            <h3 class="course-title">Mastering AI with ChatGPT for Developers</h3>
-            <div class="course-author">
-              <img src="img/circle2-min.webp" alt="Ali Hossain" class="author-avatar" />
-              <p class="author-meta">By <strong>Ali Hossain</strong> In <a href="#">AI</a>, <a href="#">No Code</a></p>
+
+            <!-- Card 2: Claude & Prompt Engineering -->
+            <div class="course-card">
+              <div class="course-thumbnail thumb-claude-pe">
+                <button class="bookmark-btn" aria-label="Bookmark">
+                  <svg width="14" height="18" viewBox="0 0 14 18" fill="none">
+                    <path
+                      d="M1 1h12v16l-6-3.5L1 17V1z"
+                      stroke-width="1.5"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+                <div class="thumb-content thumb-claude-pe-content">
+                  <div class="thumb-claude-pe-icons">
+                    <div class="claude-pe-icon">&#10027;</div>
+                    <div class="claude-pe-icon">&#9642;</div>
+                    <div class="claude-pe-icon">&#9889;</div>
+                  </div>
+                </div>
+              </div>
+              <div class="course-body">
+                <div class="course-rating">
+                  <div class="stars stars-empty">
+                    <span>&#9734;</span><span>&#9734;</span><span>&#9734;</span
+                    ><span>&#9734;</span><span>&#9734;</span>
+                  </div>
+                </div>
+                <h3 class="course-title">Claude &amp; Prompt Engineering</h3>
+                <div class="course-author">
+                  <img
+                    src="img/Ali-Ai.webp"
+                    alt="Ali Hossain"
+                    class="author-avatar"
+                  />
+                  <p class="author-meta">
+                    By <strong>Ali Hossain</strong> In <a href="#">AI</a>,
+                    <a href="#">Career Development</a>, <a href="#">No Code</a>
+                  </p>
+                </div>
+              </div>
+              <div class="course-footer">
+                <span class="course-price-wrap">
+                  <span class="course-price-old">1,998.00&#2547;</span>
+                  <span class="course-price">1,499.00&#2547;</span>
+                </span>
+                <button class="add-to-cart-btn">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linejoin="round"
+                    />
+                    <line
+                      x1="3"
+                      y1="6"
+                      x2="21"
+                      y2="6"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    />
+                    <path
+                      d="M16 10a4 4 0 01-8 0"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    />
+                  </svg>
+                  Add to cart
+                </button>
+              </div>
+            </div>
+
+            <!-- Card 3: Mastering AI with ChatGPT -->
+            <div class="course-card">
+              <div class="course-thumbnail thumb-ai-gpt">
+                <span class="course-badge badge-beginner">Beginner</span>
+                <button class="bookmark-btn" aria-label="Bookmark">
+                  <svg width="14" height="18" viewBox="0 0 14 18" fill="none">
+                    <path
+                      d="M1 1h12v16l-6-3.5L1 17V1z"
+                      stroke-width="1.5"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+                <div class="thumb-content thumb-ai-gpt-content">
+                  <div class="thumb-ai-gpt-icons">
+                    <div class="ai-gpt-icon">
+                      <svg
+                        width="22"
+                        height="22"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <circle cx="12" cy="12" r="10" fill="#10a37f" />
+                        <path
+                          d="M12 6v6l4 2"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                        />
+                      </svg>
+                    </div>
+                    <div class="ai-gpt-icon" style="background: #7b2d8b">
+                      <svg
+                        width="22"
+                        height="22"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <path
+                          d="M12 2l2.5 5 5.5.8-4 3.9.9 5.5L12 15l-4.9 2.2.9-5.5L4 7.8l5.5-.8z"
+                          fill="white"
+                        />
+                      </svg>
+                    </div>
+                    <div class="ai-gpt-icon" style="background: #4285f4">
+                      <svg
+                        width="22"
+                        height="22"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <text
+                          x="4"
+                          y="17"
+                          font-size="13"
+                          font-weight="bold"
+                          fill="white"
+                          font-family="sans-serif"
+                        >
+                          G
+                        </text>
+                      </svg>
+                    </div>
+                  </div>
+                  <p class="thumb-ai-text-main">মাস্টারিং</p>
+                  <p class="thumb-ai-text-sub">প্রম্পট ইঞ্জিনিয়ারিং</p>
+                </div>
+              </div>
+              <div class="course-body">
+                <div class="course-rating">
+                  <div class="stars stars-filled">
+                    <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span
+                    ><span>&#9733;</span><span>&#9733;</span>
+                  </div>
+                  <span class="rating-value">5.00</span>
+                  <span class="rating-count">(20)</span>
+                </div>
+                <h3 class="course-title">
+                  Mastering AI with ChatGPT for Developers
+                </h3>
+                <div class="course-author">
+                  <img
+                    src="img/Ali-Ai.webp"
+                    alt="Ali Hossain"
+                    class="author-avatar"
+                  />
+                  <p class="author-meta">
+                    By <strong>Ali Hossain</strong> In <a href="#">AI</a>,
+                    <a href="#">No Code</a>
+                  </p>
+                </div>
+              </div>
+              <div class="course-footer">
+                <span class="course-price">999.00&#2547;</span>
+                <button class="add-to-cart-btn">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linejoin="round"
+                    />
+                    <line
+                      x1="3"
+                      y1="6"
+                      x2="21"
+                      y2="6"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    />
+                    <path
+                      d="M16 10a4 4 0 01-8 0"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    />
+                  </svg>
+                  Add to cart
+                </button>
+              </div>
+            </div>
+
+            <!-- Card 4: Mastering AI (original) -->
+            <div class="course-card">
+              <div class="course-thumbnail thumb-ai">
+                <span class="course-badge badge-beginner">Beginner</span>
+                <button class="bookmark-btn" aria-label="Bookmark">
+                  <svg width="14" height="18" viewBox="0 0 14 18" fill="none">
+                    <path
+                      d="M1 1h12v16l-6-3.5L1 17V1z"
+                      stroke-width="1.5"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+                <div class="thumb-content thumb-ai-content">
+                  <div class="thumb-ai-icons">
+                    <div class="ai-icon-circle">
+                      <svg
+                        width="22"
+                        height="22"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <circle cx="12" cy="12" r="10" fill="#10a37f" />
+                        <path
+                          d="M12 6v6l4 2"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                        />
+                      </svg>
+                    </div>
+                    <div class="ai-icon-circle" style="background: #7b2d8b">
+                      <svg
+                        width="22"
+                        height="22"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <path
+                          d="M12 2l2.5 5 5.5.8-4 3.9.9 5.5L12 15l-4.9 2.2.9-5.5L4 7.8l5.5-.8z"
+                          fill="white"
+                        />
+                      </svg>
+                    </div>
+                    <div class="ai-icon-circle" style="background: #4285f4">
+                      <svg
+                        width="22"
+                        height="22"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <text
+                          x="4"
+                          y="17"
+                          font-size="13"
+                          font-weight="bold"
+                          fill="white"
+                          font-family="sans-serif"
+                        >
+                          G
+                        </text>
+                      </svg>
+                    </div>
+                  </div>
+                  <p class="thumb-bn-title">মাস্টারিং</p>
+                  <p class="thumb-bn-sub">প্রম্পট ইঞ্জিনিয়ারিং</p>
+                </div>
+              </div>
+              <div class="course-body">
+                <div class="course-rating">
+                  <div class="stars stars-filled">
+                    <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span
+                    ><span>&#9733;</span><span>&#9733;</span>
+                  </div>
+                  <span class="rating-value">5.00</span>
+                  <span class="rating-count">(20)</span>
+                </div>
+                <h3 class="course-title">
+                  Mastering AI with ChatGPT for Developers
+                </h3>
+                <div class="course-author">
+                  <img
+                    src="img/Ali-Ai.webp"
+                    alt="Ali Hossain"
+                    class="author-avatar"
+                  />
+                  <p class="author-meta">
+                    By <strong>Ali Hossain</strong> In <a href="#">AI</a>,
+                    <a href="#">No Code</a>
+                  </p>
+                </div>
+              </div>
+              <div class="course-footer">
+                <span class="course-price">999.00&#2547;</span>
+                <button class="add-to-cart-btn">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linejoin="round"
+                    />
+                    <line
+                      x1="3"
+                      y1="6"
+                      x2="21"
+                      y2="6"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    />
+                    <path
+                      d="M16 10a4 4 0 01-8 0"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    />
+                  </svg>
+                  Add to cart
+                </button>
+              </div>
+            </div>
+
+            <!-- Card 5: Claude for Developers (original) -->
+            <div class="course-card">
+              <div class="course-thumbnail thumb-claude">
+                <span class="course-badge badge-intermediate"
+                  >Intermediate</span
+                >
+                <button class="bookmark-btn" aria-label="Bookmark">
+                  <svg width="14" height="18" viewBox="0 0 14 18" fill="none">
+                    <path
+                      d="M1 1h12v16l-6-3.5L1 17V1z"
+                      stroke-width="1.5"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+                <div class="thumb-content thumb-claude-content">
+                  <div class="thumb-claude-text-block">
+                    <p class="thumb-claude-line">CLAUDE</p>
+                    <p class="thumb-claude-line">CODE</p>
+                    <div class="thumb-claude-icons">
+                      <div class="claude-icon">&#10027;</div>
+                      <div class="claude-icon">&#9642;</div>
+                      <div class="claude-icon">&#9889;</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="course-body">
+                <div class="course-rating">
+                  <div class="stars stars-filled">
+                    <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span
+                    ><span>&#9733;</span><span>&#9733;</span>
+                  </div>
+                  <span class="rating-value">5.00</span>
+                  <span class="rating-count">(1)</span>
+                </div>
+                <h3 class="course-title">
+                  Claude for Developers: Masterclass and Workshop
+                </h3>
+                <div class="course-author">
+                  <img
+                    src="img/Ali-Ai.webp"
+                    alt="Ali Hossain"
+                    class="author-avatar"
+                  />
+                  <p class="author-meta">
+                    By <strong>Ali Hossain</strong> In <a href="#">AI</a>,
+                    <a href="#">Career Development</a>
+                  </p>
+                </div>
+              </div>
+              <div class="course-footer">
+                <span class="course-price">999.00&#2547;</span>
+                <button class="add-to-cart-btn">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linejoin="round"
+                    />
+                    <line
+                      x1="3"
+                      y1="6"
+                      x2="21"
+                      y2="6"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    />
+                    <path
+                      d="M16 10a4 4 0 01-8 0"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    />
+                  </svg>
+                  Add to cart
+                </button>
+              </div>
+            </div>
+
+            <!-- Card 6: Webflow Masterclass (original) -->
+            <div class="course-card">
+              <div class="course-thumbnail thumb-webflow">
+                <span class="course-badge badge-beginner">Beginner</span>
+                <button class="bookmark-btn" aria-label="Bookmark">
+                  <svg width="14" height="18" viewBox="0 0 14 18" fill="none">
+                    <path
+                      d="M1 1h12v16l-6-3.5L1 17V1z"
+                      stroke-width="1.5"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+                <div class="thumb-content thumb-webflow-content">
+                  <div class="thumb-webflow-logo">
+                    <svg width="30" height="30" viewBox="0 0 50 50" fill="none">
+                      <text
+                        x="0"
+                        y="38"
+                        font-size="46"
+                        font-weight="900"
+                        fill="#4353ff"
+                        font-family="sans-serif"
+                      >
+                        W
+                      </text>
+                    </svg>
+                    <span class="thumb-webflow-brand">Webflow</span>
+                  </div>
+                  <div class="thumb-webflow-ui">
+                    <div class="wf-ui-bar"></div>
+                    <div class="wf-ui-bar wf-ui-bar-sm"></div>
+                    <div class="wf-ui-bar wf-ui-bar-xs"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="course-body">
+                <div class="course-rating">
+                  <div class="stars stars-empty">
+                    <span>&#9734;</span><span>&#9734;</span><span>&#9734;</span
+                    ><span>&#9734;</span><span>&#9734;</span>
+                  </div>
+                </div>
+                <h3 class="course-title">Webflow Masterclass 101 PREEBOOK</h3>
+                <div class="course-author">
+                  <img
+                    src="img/Ali-Ai.webp"
+                    alt="Ali Hossain"
+                    class="author-avatar"
+                  />
+                  <p class="author-meta">
+                    By <strong>Ali Hossain</strong> In <a href="#">No Code</a>
+                  </p>
+                </div>
+              </div>
+              <div class="course-footer">
+                <span class="course-price">999.00&#2547;</span>
+                <button class="add-to-cart-btn">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linejoin="round"
+                    />
+                    <line
+                      x1="3"
+                      y1="6"
+                      x2="21"
+                      y2="6"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    />
+                    <path
+                      d="M16 10a4 4 0 01-8 0"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    />
+                  </svg>
+                  Add to cart
+                </button>
+              </div>
             </div>
           </div>
-          <div class="course-footer">
-            <span class="course-price">999.00&#2547;</span>
-            <button class="add-to-cart-btn">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-                <line x1="3" y1="6" x2="21" y2="6" stroke="currentColor" stroke-width="2"/>
-                <path d="M16 10a4 4 0 01-8 0" stroke="currentColor" stroke-width="2"/>
-              </svg>
-              Add to cart
-            </button>
-          </div>
+          <!-- /.carousel-track -->
         </div>
+        <!-- /.carousel-viewport -->
 
-        <!-- Card 2: Claude Code -->
-        <div class="course-card">
-          <div class="course-thumbnail thumb-claude">
-            <span class="course-badge badge-intermediate">Intermediate</span>
-            <button class="bookmark-btn" aria-label="Bookmark">
-              <svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1 1h12v16l-6-3.5L1 17V1z" stroke="#6b7280" stroke-width="1.5" stroke-linejoin="round"/>
-              </svg>
-            </button>
-            <div class="thumb-content thumb-claude-content">
-              <div class="thumb-claude-text-block">
-                <p class="thumb-claude-line">CLAUDE</p>
-                <p class="thumb-claude-line">CODE</p>
-              </div>
-              <div class="thumb-claude-icons">
-                <div class="claude-icon">&#10027;</div>
-                <div class="claude-icon">&#9642;</div>
-                <div class="claude-icon">&#9889;</div>
-              </div>
-            </div>
-          </div>
-          <div class="course-body">
-            <div class="course-rating">
-              <div class="stars stars-filled">
-                <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
-              </div>
-              <span class="rating-value">5.00</span>
-              <span class="rating-count">(1)</span>
-            </div>
-            <h3 class="course-title">Claude for Developers: Masterclass and Workshop</h3>
-            <div class="course-author">
-              <img src="img/circle2-min.webp" alt="Ali Hossain" class="author-avatar" />
-              <p class="author-meta">By <strong>Ali Hossain</strong> In <a href="#">AI</a>, <a href="#">Career Development</a></p>
-            </div>
-          </div>
-          <div class="course-footer">
-            <span class="course-price">999.00&#2547;</span>
-            <button class="add-to-cart-btn">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-                <line x1="3" y1="6" x2="21" y2="6" stroke="currentColor" stroke-width="2"/>
-                <path d="M16 10a4 4 0 01-8 0" stroke="currentColor" stroke-width="2"/>
-              </svg>
-              Add to cart
-            </button>
-          </div>
-        </div>
+        <button class="carousel-btn carousel-next" aria-label="Next slide">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+            <path
+              d="M9 18l6-6-6-6"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+      </div>
+      <!-- /.courses-carousel-wrapper -->
 
-        <!-- Card 3: Webflow -->
-        <div class="course-card">
-          <div class="course-thumbnail thumb-webflow">
-            <span class="course-badge badge-beginner">Beginner</span>
-            <button class="bookmark-btn" aria-label="Bookmark">
-              <svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1 1h12v16l-6-3.5L1 17V1z" stroke="#6b7280" stroke-width="1.5" stroke-linejoin="round"/>
-              </svg>
-            </button>
-            <div class="thumb-content thumb-webflow-content">
-              <div class="thumb-webflow-logo">
-                <svg width="30" height="30" viewBox="0 0 50 50" fill="none"><text x="0" y="38" font-size="46" font-weight="900" fill="#4353ff" font-family="sans-serif">W</text></svg>
-                <span class="thumb-webflow-brand">Webflow</span>
-              </div>
-              <div class="thumb-webflow-ui">
-                <div class="wf-ui-bar"></div>
-                <div class="wf-ui-bar wf-ui-bar-sm"></div>
-                <div class="wf-ui-bar wf-ui-bar-xs"></div>
-              </div>
-            </div>
-          </div>
-          <div class="course-body">
-            <div class="course-rating">
-              <div class="stars stars-empty">
-                <span>&#9734;</span><span>&#9734;</span><span>&#9734;</span><span>&#9734;</span><span>&#9734;</span>
-              </div>
-            </div>
-            <h3 class="course-title">Webflow Masterclass 101 PREEBOOK</h3>
-            <div class="course-author">
-              <img src="img/circle2-min.webp" alt="Ali Hossain" class="author-avatar" />
-              <p class="author-meta">By <strong>Ali Hossain</strong> In <a href="#">No Code</a></p>
-            </div>
-          </div>
-          <div class="course-footer">
-            <span class="course-price">999.00&#2547;</span>
-            <button class="add-to-cart-btn">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-                <line x1="3" y1="6" x2="21" y2="6" stroke="currentColor" stroke-width="2"/>
-                <path d="M16 10a4 4 0 01-8 0" stroke="currentColor" stroke-width="2"/>
-              </svg>
-              Add to cart
-            </button>
-          </div>
-        </div>
-
+      <div class="carousel-dots" id="carouselDots">
+        <button
+          class="carousel-dot active"
+          data-index="0"
+          aria-label="Go to slide 1"
+        ></button>
+        <button
+          class="carousel-dot"
+          data-index="1"
+          aria-label="Go to slide 2"
+        ></button>
+        <button
+          class="carousel-dot"
+          data-index="2"
+          aria-label="Go to slide 3"
+        ></button>
+        <button
+          class="carousel-dot"
+          data-index="3"
+          aria-label="Go to slide 4"
+        ></button>
+        <button
+          class="carousel-dot"
+          data-index="4"
+          aria-label="Go to slide 5"
+        ></button>
+        <button
+          class="carousel-dot"
+          data-index="5"
+          aria-label="Go to slide 6"
+        ></button>
       </div>
     </section>
+
+    <section class="yt-section">
+      <div class="features-inner">
+        <div class="features-header">
+          <h2 class="features-heading">
+            কোর্সে কি <span class="features-heading-highlight">কি পাবেন?</span>
+          </h2>
+          <p class="features-subtitle">
+            দেখে নিন কি কি পাচ্ছেন রেকর্ডেড কোর্স জয়েন করলে
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <!-- Card 1: Project-based Study -->
+          <div class="feature-card">
+            <div class="feature-icon-wrap">
+              <div class="feature-ring-outer">
+                <div class="feature-ring-inner">
+                  <div class="feature-icon-circle">
+                    <svg
+                      width="42"
+                      height="42"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25z"
+                        fill="#a0aec0"
+                      />
+                      <path
+                        d="M20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34a.996.996 0 00-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"
+                        fill="#a0aec0"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h3 class="feature-title feature-title-underline">
+              প্রোজেক্ট ভিত্তিক স্টাডি
+            </h3>
+            <p class="feature-desc">
+              যে কোনো কিছু শিখতে গেলে আমি সবসময় ফাউন্ডেশনের ওপর জোর দিই। ভিত্তি
+              যদি শক্ত না হয়, তাহলে বড় কিছু গড়ে ওঠে না। এখানেও ঠিক একইভাবে
+              আপনি শিখবেন। প্রথমে ফাউন্ডেশন মজবুত করবেন, তারপর প্রোজেক্টের
+              মাধ্যমে ধাপে ধাপে এগিয়ে যাবেন। এটা এক ধরনের নির্মাণ কাজের
+              মতো—ভিত্তি শক্ত হলে ভবন দাঁড়িয়ে যায় টিকে থাকার জন্য।
+            </p>
+          </div>
+
+          <!-- Card 2: Real-time Progress Tracking -->
+          <div class="feature-card">
+            <div class="feature-icon-wrap">
+              <div class="feature-ring-outer">
+                <div class="feature-ring-inner">
+                  <div class="feature-icon-circle">
+                    <svg
+                      width="42"
+                      height="42"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      aria-hidden="true"
+                    >
+                      <rect
+                        x="3"
+                        y="12"
+                        width="4"
+                        height="9"
+                        rx="1"
+                        fill="#f97316"
+                      />
+                      <rect
+                        x="9"
+                        y="7"
+                        width="4"
+                        height="14"
+                        rx="1"
+                        fill="#ef4444"
+                      />
+                      <rect
+                        x="15"
+                        y="3"
+                        width="4"
+                        height="18"
+                        rx="1"
+                        fill="#f59e0b"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h3 class="feature-title">রিয়েলটাইম প্রোগ্রেস ট্র্যাকিং</h3>
+            <p class="feature-desc">
+              আপনি কতটুকু কাজ শিখেছেন, কতটুকু এখনো বাকি, আর কবে কোর্সে যোগ
+              দিয়েছেন—সবকিছুই এখন থাকবে আপনার হাতের মুঠোয়। রিয়েলটাইম
+              ড্যাশবোর্ডে এক নজরে দেখতে পাবেন সবকিছু। যেন নিজের শেখার গল্পটা
+              আপনি নিজেই লিখছেন, এক পৃষ্ঠা থেকে আরেক পৃষ্ঠায় এগিয়ে চলেছেন।
+            </p>
+          </div>
+
+          <!-- Card 3: Learn from Industry Expert -->
+          <div class="feature-card">
+            <div class="feature-icon-wrap">
+              <div class="feature-ring-outer">
+                <div class="feature-ring-inner">
+                  <div class="feature-icon-circle">
+                    <svg
+                      width="44"
+                      height="44"
+                      viewBox="0 0 44 44"
+                      fill="none"
+                      aria-hidden="true"
+                    >
+                      <circle cx="22" cy="18" r="10" fill="#f59e0b" />
+                      <circle
+                        cx="22"
+                        cy="18"
+                        r="10"
+                        fill="none"
+                        stroke="#d97706"
+                        stroke-width="2"
+                      />
+                      <text
+                        x="17.5"
+                        y="23"
+                        font-size="12"
+                        font-weight="900"
+                        fill="white"
+                        font-family="sans-serif"
+                      >
+                        &#9733;
+                      </text>
+                      <path d="M14 26l-4 12 12-5 12 5-4-12" fill="#ef4444" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h3 class="feature-title">শিখুন ইন্ডাস্ট্রি এক্সপার্ট থেকে</h3>
+            <p class="feature-desc">
+              ১২ বছরেরও বেশি সময় ধরে আমি ওয়েব ডেভেলপার হিসেবে কাজ করছি। কাজের
+              প্রতিটি মুহূর্ত ছিল শেখার এবং অভিজ্ঞতার গল্প। সেই বাস্তব কাজের
+              অভিজ্ঞতা থেকেই এবার আপনাকে শেখাবো—যা শুধু তথ্য নয়, বরং হাতেকলমে
+              প্রয়োগের মজাও পাবেন। মনে হবে যেন আমরা একসঙ্গে কাজ করছি, একই
+              টেবিলে বসে।
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <div class="about-inner">
+        <div class="about-header">
+          <h2 class="about-heading">
+            আমার সম্পর্কে <span class="about-heading-highlight">কিছু কথা</span>
+          </h2>
+          <p class="about-subtitle">কে, কেন, কিভাবে?</p>
+        </div>
+
+        <div class="about-content">
+          <!-- Left: photo -->
+          <div class="about-left">
+            <img
+              src="img/WordPress-Roadmap-min.webp"
+              alt="Ali Hossain"
+              class="about-img"
+            />
+          </div>
+
+          <!-- Vertical divider -->
+          <div class="about-divider"></div>
+
+          <!-- Right: text -->
+          <div class="about-right">
+            <p class="about-para">
+              আমি আলী হোসেন একজন ওয়েব ডেভেলপার, দীর্ঘদিন ফ্রিল্যান্সিং করছি টপ
+              মার্কেটপ্লেস, যেমন Fiverr আর Upwork-এ। এমনকি Upwork-এ আমি ছিলাম টপ
+              রেটেড ফ্রিল্যান্সার। এরপর যুক্ত হই একটি আমেরিকান কোম্পানির রিমোট
+              জবের জন্য।
+            </p>
+            <p class="about-para">
+              প্রোগ্রামিং আর ওয়েব ডেভেলপমেন্ট শেখা আমার জন্য সবসময়ই এক ধরনের
+              ভালো লাগার বিষয়। আর সেই ভালো লাগা থেকেই ২০১৯ সালে শুরু করি
+              <em>Procoder BD</em> নামে একটি YouTube চ্যানেল। এখন সেখানে ৬২৫টিরও
+              বেশি ভিডিও রয়েছে, যেগুলো লক্ষ লক্ষ লার্নারকে প্রতিদিন সহায়তা
+              করছে।
+            </p>
+            <div class="about-signature">
+              <p class="about-sig-name">আলী হোসেন</p>
+              <p class="about-sig-role">ওয়েব ডেভেলপার, শিক্ষক</p>
+              <p class="about-sig-role">
+                Founder &amp; CEO - aliHossain Academy
+              </p>
+              <p class="about-sig-license">
+                ট্রেড লাইসেন্স : TRAD/DNCC/002347/2025
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      (function () {
+        function gap() {
+          return window.innerWidth <= 540
+            ? 14
+            : window.innerWidth <= 820
+              ? 18
+              : 28;
+        }
+        var track = document.getElementById("coursesTrack");
+        var cards = track.querySelectorAll(".course-card");
+        var prevBtn = document.querySelector(".carousel-prev");
+        var nextBtn = document.querySelector(".carousel-next");
+        var dots = document.querySelectorAll(".carousel-dot");
+        var current = 0;
+
+        function visible() {
+          return window.innerWidth >= 1024
+            ? 3
+            : window.innerWidth >= 640
+              ? 2
+              : 1;
+        }
+
+        function setWidths() {
+          var v = visible();
+          var g = gap();
+          var vp = track.parentElement.offsetWidth;
+          var w = (vp - g * (v - 1)) / v;
+          cards.forEach(function (c) {
+            c.style.width = w + "px";
+          });
+          return { w: w, g: g };
+        }
+
+        var timer = null;
+
+        function getMax() {
+          return cards.length - visible();
+        }
+
+        function goTo(idx) {
+          var max = getMax();
+          current = ((idx % (max + 1)) + (max + 1)) % (max + 1); // wrap 0…max
+          var wg = setWidths();
+          track.style.transform =
+            "translateX(-" + current * (wg.w + wg.g) + "px)";
+          prevBtn.disabled = false;
+          nextBtn.disabled = false;
+          dots.forEach(function (d, i) {
+            d.classList.toggle("active", i === current);
+          });
+        }
+
+        function startAutoplay() {
+          stopAutoplay();
+          timer = setInterval(function () {
+            goTo(current + 1);
+          }, 5000);
+        }
+
+        function stopAutoplay() {
+          if (timer) {
+            clearInterval(timer);
+            timer = null;
+          }
+        }
+
+        function navigate(idx) {
+          goTo(idx);
+          startAutoplay(); // reset the 5-second timer on manual interaction
+        }
+
+        prevBtn.addEventListener("click", function () {
+          navigate(current - 1);
+        });
+        nextBtn.addEventListener("click", function () {
+          navigate(current + 1);
+        });
+        dots.forEach(function (d) {
+          d.addEventListener("click", function () {
+            navigate(+d.dataset.index);
+          });
+        });
+
+        var touchX = 0;
+        track.addEventListener(
+          "touchstart",
+          function (e) {
+            touchX = e.touches[0].clientX;
+          },
+          { passive: true },
+        );
+        track.addEventListener("touchend", function (e) {
+          var dx = e.changedTouches[0].clientX - touchX;
+          if (Math.abs(dx) > 50) navigate(dx < 0 ? current + 1 : current - 1);
+        });
+
+        window.addEventListener("resize", function () {
+          goTo(current);
+        });
+        goTo(0);
+        startAutoplay();
+      })();
+    </script>
   </body>
 </html>
