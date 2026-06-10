@@ -263,7 +263,7 @@ img.emoji {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 40px;
+  gap: 24px;
   padding: 0 0 60px 80px;
   min-height: calc(100vh - 110px);
   overflow: hidden;
@@ -294,9 +294,9 @@ img.emoji {
 }
 
 .about-hero-text h1 {
-  font-size: 46px;
+  font-size: 52px;
   font-weight: 800;
-  line-height: 1.35;
+  line-height: 1.3;
   color: #1a1a2e;
   margin-bottom: 20px;
 }
@@ -313,7 +313,7 @@ img.emoji {
 }
 
 .about-hero-desc {
-  font-size: 17px;
+  font-size: 18px;
   line-height: 1.8;
   color: #2d2d3f;
   margin-bottom: 32px;
@@ -394,12 +394,9 @@ img.emoji {
 
 .about-hero-image {
   flex-shrink: 0;
-  align-self: flex-end;
-  height: calc(100vh - 110px);
-  margin-left: -220px;
-  margin-right: -80px;
+  align-self: center;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
 }
 
 .about-hero-image img {
@@ -411,7 +408,7 @@ img.emoji {
 
 @media (max-width: 1300px) {
   .about-hero-image {
-    margin-left: -100px;
+    margin-left: 0;
   }
 }
 
