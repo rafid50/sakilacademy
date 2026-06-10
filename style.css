@@ -113,6 +113,7 @@ img.emoji {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 .notification .badge {
@@ -129,6 +130,17 @@ img.emoji {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+}
+
+.badge {
+  transition: background-color 0.3s ease;
+}
+
+.notification:hover .badge,
+.notification:hover + .badge,
+.notification:hover ~ .badge {
+  background-color: var(--pro-primary);
 }
 
 .dashboard-btn {
