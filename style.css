@@ -99,7 +99,7 @@ img.emoji {
 }
 
 .nav-links a.active {
-  color: #8a4fdb;
+  color: var(--e-global-color-secondary);
 }
 
 .nav-actions {
