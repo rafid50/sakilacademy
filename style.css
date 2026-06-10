@@ -333,7 +333,7 @@ img.emoji {
   display: flex;
   align-items: center;
   gap: 14px;
-  max-width: 1160px;
+  max-width: 1360px;
   margin: 0 auto;
 }
 
@@ -970,7 +970,7 @@ img.emoji {
 }
 
 .features-inner {
-  max-width: 1160px;
+  max-width: 1360px;
   margin: 0 auto;
   padding: 84px 80px 96px;
 }
@@ -1010,13 +1010,13 @@ img.emoji {
 .features-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 28px;
+  gap: 32px;
 }
 
 .feature-card {
   background: #ffffff;
   border-radius: 16px;
-  padding: 44px 28px 38px;
+  padding: 44px 32px 40px;
   box-shadow: 0 2px 18px rgba(112, 94, 236, 0.1);
   text-align: center;
   display: flex;
@@ -1562,7 +1562,7 @@ img.emoji {
 }
 
 .about-inner {
-  max-width: 1160px;
+  max-width: 1360px;
   margin: 0 auto;
   padding: 84px 80px 92px;
 }
@@ -1760,7 +1760,7 @@ img.emoji {
 }
 
 .testimonials-inner {
-  max-width: 1160px;
+  max-width: 1360px;
   margin: 0 auto;
   padding: 84px 80px 92px;
 }
@@ -1804,13 +1804,13 @@ img.emoji {
 .testimonials-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 28px;
+  gap: 32px;
 }
 
 .testimonial-card {
   background: var(--pro-primary);
   border-radius: 16px;
-  padding: 32px 28px 28px;
+  padding: 32px 32px 28px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1945,8 +1945,8 @@ img.emoji {
 .footer-main {
   display: grid;
   grid-template-columns: 2fr 1.4fr 1.4fr;
-  gap: 64px;
-  max-width: 1160px;
+  gap: 72px;
+  max-width: 1360px;
   margin: 0 auto;
   padding: 72px 80px 60px;
 }
@@ -2029,7 +2029,7 @@ img.emoji {
   display: flex;
   align-items: center;
   gap: 18px;
-  max-width: 1160px;
+  max-width: 1360px;
   margin: 0 auto;
   padding: 0 80px 52px;
 }
