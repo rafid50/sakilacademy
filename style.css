@@ -2034,14 +2034,14 @@ img.emoji {
   padding: 0 80px 52px;
 }
 
-.payment-label {
+/* .payment-label {
   font-family: "Anek Bangla", sans-serif;
   font-size: 13px;
   font-weight: 600;
   color: #6b7280;
   white-space: nowrap;
   writing-mode: horizontal-tb;
-}
+} */
 
 .payment-logos-wrap {
   flex: 1;
