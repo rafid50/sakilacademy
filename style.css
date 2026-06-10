@@ -190,7 +190,14 @@ img.emoji {
 }
 
 .hero-text h1 span {
-  color: #705eec;
+  background: linear-gradient(
+    90deg,
+    var(--pro-primary) 0%,
+    var(--pro-secondary) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .hero-desc {
