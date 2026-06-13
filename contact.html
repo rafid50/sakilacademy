@@ -44,11 +44,11 @@
       </div>
 
       <nav class="nav-links">
-        <a href="http://localhost/alihossainacademy/" class="active">হোম</a>
+        <a href="http://localhost/alihossainacademy/">হোম</a>
         <a href="http://localhost/alihossainacademy/about">মেন্টর</a>
         <a href="http://localhost/alihossainacademy/courses">সকল কোর্স</a>
         <a href="http://localhost/alihossainacademy/blog">ব্লগ</a>
-        <a href="http://localhost/alihossainacademy/contact">যোগাযোগ</a>
+        <a href="http://localhost/alihossainacademy/contact" class="active">যোগাযোগ</a>
       </nav>
 
       <div class="nav-actions">
@@ -73,126 +73,204 @@
         <a href="#" class="dashboard-btn">ড্যাশবোর্ড</a>
       </div>
     </header>
-    <div class="contact-page">
-      <main class="contact-page-shell">
-        <section class="contact-hero-title" aria-label="Contact headline">
-          <p>“একটি দৃঢ়সম্পর্ক</p>
-          <h1>যেকোনো কিছু উপর দিকে থাকতে পারে”</h1>
-        </section>
 
-        <section class="contact-layout" aria-label="Contact information">
-          <div class="contact-visual">
-            <img
-              src="img/contact-handshake.webp"
-              alt="Handshake"
-              width="460"
-              height="260"
-            />
-          </div>
+    <!-- Hero section -->
+    <section class="contact-hero">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="http://localhost/alihossainacademy/">Home</a>
+        <span class="breadcrumb-sep">&#8594;</span>
+        <span class="breadcrumb-current">Contact</span>
+      </nav>
+      <h1>যোগাযোগ করুন</h1>
+      <p class="contact-hero-desc">
+        কোর্স সম্পর্কিত তথ্য, সাপোর্ট সহায়তা বা যেকোনো বিজনেস ইনকোয়ারির জন্য
+        আমাদের সাথে যোগাযোগ করুন। আমরা আপনার বার্তার উত্তর দিতে সবসময়
+        প্রস্তুত আছি।
+      </p>
+    </section>
 
-          <div class="contact-copy">
-            <p class="contact-eyebrow">আমাদের সাথে</p>
-            <h2>যোগাযোগ করতে চাইলে...</h2>
+    <!-- Contact info cards -->
+    <section class="contact-info-section" aria-label="Contact information">
+      <div class="contact-info-grid">
+        <div class="contact-info-card">
+          <div class="contact-info-icon">📍</div>
+          <h3>ঠিকানা</h3>
+          <p>ঢাকা, বাংলাদেশ</p>
+        </div>
 
-            <div class="contact-notes">
-              <p class="contact-note">
-                <span class="contact-dot" aria-hidden="true"></span>
-                <span>
-                  দয়া করে আপনার সাথে কাজ করতে চাই, আমার এই ওয়েবসাইট বানিয়ে দেন
-                  বা আমার সাইট এর এই সমস্যা হচ্ছে ঠিক করে দেন, এই জাতীয় প্রশ্ন
-                  করে ইমেইল করবেন না, আমার বাইরে কাজ করার মতো সময় আপাতত নেই।
-                  তাই বাইরে কাজ নেওয়া নিয়ে ভাববেন না।
-                </span>
-              </p>
+        <div class="contact-info-card">
+          <div class="contact-info-icon">📞</div>
+          <h3>ফোন নম্বর</h3>
+          <p>+৮৮০ ১৩-০০০-০০০০০</p>
+        </div>
 
-              <p class="contact-note">
-                <span class="contact-dot" aria-hidden="true"></span>
-                <span>
-                  আমার কোনো অফলাইন কোর্স নেই, তাই অফলাইন বিষয়ে চিঠি দিলে তাও
-                  ইমেইল করবেন না।
-                </span>
-              </p>
+        <div class="contact-info-card">
+          <div class="contact-info-icon">✉️</div>
+          <h3>ইমেইল ঠিকানা</h3>
+          <p>support@alihossainacademy.com</p>
+        </div>
+      </div>
+    </section>
 
-              <p class="contact-note contact-note--accent">
-                <span class="contact-dot" aria-hidden="true"></span>
-                <span>
-                  👉 কোর্স সম্পর্কে আপনার যদি কিছু জানার থাকে বা আপনার যদি কোনো
-                  সমস্যার থাকে তাহলে যোগাযোগ করুন, আমাদের জানার চেষ্টা করা হবে
-                  😊
-                </span>
-              </p>
+    <!-- Contact form + image -->
+    <section class="contact-form-section" aria-label="Contact form">
+      <div class="contact-form-layout">
+        <div class="contact-form-wrap">
+          <p class="contact-form-eyebrow">যোগাযোগ ফর্ম</p>
+          <h2>আমাদের কাছে বার্তা পাঠান</h2>
+
+          <form class="contact-form" action="#" method="post">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contact-name">নাম</label>
+                <input
+                  type="text"
+                  id="contact-name"
+                  name="name"
+                  placeholder="আপনার নাম লিখুন"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="contact-email">ইমেইল</label>
+                <input
+                  type="email"
+                  id="contact-email"
+                  name="email"
+                  placeholder="আপনার ইমেইল লিখুন"
+                  required
+                />
+              </div>
             </div>
 
-            <div class="contact-links" aria-label="Contact links">
-              <a
-                href="mailto:support@alihossainacademy.com"
-                class="contact-link"
-              >
-                <svg viewBox="0 0 24 24" aria-hidden="true" fill="none">
-                  <path
-                    d="M4 6.75A2.75 2.75 0 0 1 6.75 4h10.5A2.75 2.75 0 0 1 20 6.75v10.5A2.75 2.75 0 0 1 17.25 20H6.75A2.75 2.75 0 0 1 4 17.25V6.75Z"
-                    stroke="currentColor"
-                    stroke-width="1.7"
-                  />
-                  <path
-                    d="m6.25 7.5 5.11 4.08c.36.29.87.29 1.23 0L17.75 7.5"
-                    stroke="currentColor"
-                    stroke-width="1.7"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-                <span>support@alihossainacademy.com</span>
-              </a>
-
-              <a href="#" class="contact-link">
-                <svg viewBox="0 0 24 24" aria-hidden="true" fill="none">
-                  <path
-                    d="M21 4.5 3.85 10.98c-.97.37-.93 1.76.06 2.08l4.15 1.37 1.56 4.79c.28.86 1.42 1.02 1.92.27l2.25-3.36 4.79 3.56c.75.56 1.84.14 2.01-.81L23 5.63c.2-1.08-.84-1.96-2-1.13Z"
-                    stroke="currentColor"
-                    stroke-width="1.7"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-                <span>Join Telegram</span>
-              </a>
-
-              <a href="#" class="contact-link">
-                <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
-                  <path
-                    d="M13.5 22v-8.5H16l.5-3H13.5V8.3c0-.87.28-1.64 1.71-1.64H17V3.1c-.64-.09-1.78-.18-3.1-.18-2.73 0-4.59 1.66-4.59 4.7v2.88H6.5v3h2.81V22h4.19Z"
-                  />
-                </svg>
-                <span>Follow us on Facebook</span>
-              </a>
-
-              <a href="#" class="contact-link">
-                <svg viewBox="0 0 24 24" aria-hidden="true" fill="none">
-                  <rect
-                    x="3.25"
-                    y="3.25"
-                    width="17.5"
-                    height="17.5"
-                    rx="5"
-                    stroke="currentColor"
-                    stroke-width="1.7"
-                  />
-                  <circle
-                    cx="12"
-                    cy="12"
-                    r="4.2"
-                    stroke="currentColor"
-                    stroke-width="1.7"
-                  />
-                  <circle cx="17.35" cy="6.65" r="0.9" fill="currentColor" />
-                </svg>
-                <span>Follow Us on Instagram</span>
-              </a>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contact-phone">ফোন নম্বর</label>
+                <input
+                  type="tel"
+                  id="contact-phone"
+                  name="phone"
+                  placeholder="আপনার ফোন নম্বর লিখুন"
+                />
+              </div>
+              <div class="form-group">
+                <label for="contact-subject">বিষয়</label>
+                <input
+                  type="text"
+                  id="contact-subject"
+                  name="subject"
+                  placeholder="বিষয় লিখুন"
+                />
+              </div>
             </div>
-          </div>
-        </section>
-      </main>
-    </div>
+
+            <div class="form-group form-group-full">
+              <label for="contact-message">বার্তা</label>
+              <textarea
+                id="contact-message"
+                name="message"
+                rows="5"
+                placeholder="আপনার বার্তা লিখুন..."
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="cta-btn contact-submit-btn">
+              বার্তা পাঠান →
+            </button>
+          </form>
+        </div>
+
+        <div class="contact-form-image">
+          <img
+            src="img/contact-handshake.webp"
+            alt="Support and assistance"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ section -->
+    <section class="faq-section" aria-label="Frequently asked questions">
+      <div class="faq-inner">
+        <div class="faq-header">
+          <p class="faq-eyebrow">সচরাচর জিজ্ঞাসা</p>
+          <h2>আপনার প্রশ্নের উত্তর</h2>
+        </div>
+
+        <div class="faq-list">
+          <details class="faq-item" open>
+            <summary class="faq-question">
+              কোর্স সম্পর্কে জানতে চাই
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p>
+                আমাদের সকল কোর্সের বিস্তারিত তথ্য, সিলেবাস এবং ফি 'সকল কোর্স'
+                পেজে পাওয়া যাবে। এছাড়াও কোনো কোর্স সম্পর্কে নির্দিষ্ট কোনো প্রশ্ন
+                থাকলে এই ফর্মের মাধ্যমে আমাদের জানাতে পারেন, আমরা দ্রুত উত্তর
+                দেওয়ার চেষ্টা করব।
+              </p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              পেমেন্ট সংক্রান্ত সমস্যা
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p>
+                পেমেন্ট করতে কোনো সমস্যা হলে অনুগ্রহ করে পেমেন্টের স্ক্রিনশট ও
+                আপনার ব্যবহৃত মাধ্যম উল্লেখ করে আমাদের ইমেইল করুন বা এই ফর্মের
+                মাধ্যমে যোগাযোগ করুন। আমাদের টিম দ্রুত সমস্যাটি সমাধানের চেষ্টা
+                করবে।
+              </p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              কোর্সে ভর্তি হতে চাই
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p>
+                কোর্সে ভর্তি হতে 'সকল কোর্স' পেজ থেকে আপনার পছন্দের কোর্সটি
+                বেছে নিয়ে এনরোল বাটনে ক্লিক করুন এবং নির্দেশনা অনুসরণ করে
+                পেমেন্ট সম্পন্ন করুন। এনরোলমেন্টের পর আপনি ড্যাশবোর্ড থেকে
+                কোর্সের সকল কনটেন্ট দেখতে পারবেন।
+              </p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              সার্টিফিকেট কিভাবে পাব?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p>
+                কোর্সের সকল মডিউল এবং প্রয়োজনীয় অ্যাসাইনমেন্ট সম্পন্ন করার পর
+                আপনার ড্যাশবোর্ড থেকে অটোমেটিকভাবে সার্টিফিকেট ডাউনলোড করার
+                অপশন চালু হয়ে যাবে।
+              </p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom CTA -->
+    <section class="motivational-banner contact-cta">
+      <h4 class="banner-underline">আপনার শেখার যাত্রা আজই শুরু করুন</h4>
+      <a
+        href="http://localhost/alihossainacademy/courses"
+        class="cta-btn contact-cta-btn"
+        >শেখা শুরু করুন →</a
+      >
+    </section>
+
     <footer class="site-footer">
       <!-- Main 3-column area -->
       <div class="footer-main">
