@@ -155,6 +155,10 @@ img.emoji {
   font-weight: 700;
   padding: 10px 24px 10px 24px;
   border-radius: 8px;
+  transition:
+    background-image 0.3s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 .dashboard-btn:hover {
   background-image: linear-gradient(
@@ -162,6 +166,8 @@ img.emoji {
     var(--e-global-color-secondary) 0%,
     var(--e-global-color-primary) 100%
   );
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(112, 94, 236, 0.3);
 }
 
 /* Hero section */
@@ -233,7 +239,10 @@ img.emoji {
   font-weight: 500;
   padding: 8px 30px 8px 30px;
   border-radius: 3px;
-  transform: 0s;
+  transition:
+    background-image 0.3s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 .cta-btn:hover {
   background-image: linear-gradient(
@@ -241,6 +250,8 @@ img.emoji {
     var(--e-global-color-primary) 0%,
     var(--e-global-color-secondary) 100%
   );
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(112, 94, 236, 0.3);
 }
 
 .hero-image {
@@ -2086,6 +2097,12 @@ img.emoji {
   line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  transition: color 0.2s ease;
+  cursor: pointer;
+}
+
+.course-title:hover {
+  color: #705eec;
 }
 
 .course-author {
@@ -2219,7 +2236,7 @@ img.emoji {
 }
 
 .course-thumbnail-photo .bookmark-btn {
-  background: rgba(255, 255, 255, 0.9);
+  /* background: rgba(255, 255, 255, 0.9); */
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
@@ -2500,6 +2517,12 @@ img.emoji {
   }
 }
 
+/* ── Why aliHossain Academy section ──────────────────── */
+.yt-why-section {
+  background: #ffffff;
+  overflow: hidden;
+}
+
 /* ── Top area: two columns ───────────────────────────── */
 .yt-inner {
   display: flex;
@@ -2638,15 +2661,39 @@ img.emoji {
 }
 
 .yt-thumb-wp {
-  background: linear-gradient(135deg, #1e87c1 0%, #0d6ea0 60%, #0a4e7a 100%);
+  background-image: linear-gradient(
+      135deg,
+      rgba(30, 135, 193, 0.78) 0%,
+      rgba(13, 110, 160, 0.78) 60%,
+      rgba(10, 78, 122, 0.85) 100%
+    ),
+    url("img/Ali-Ai.webp");
+  background-size: cover;
+  background-position: center top;
 }
 
 .yt-thumb-job {
-  background: linear-gradient(135deg, #111118 0%, #1e1e30 60%, #2a2a42 100%);
+  background-image: linear-gradient(
+      135deg,
+      rgba(17, 17, 24, 0.75) 0%,
+      rgba(30, 30, 48, 0.75) 60%,
+      rgba(42, 42, 66, 0.82) 100%
+    ),
+    url("img/Ali-Ai.webp");
+  background-size: cover;
+  background-position: center top;
 }
 
 .yt-thumb-freelance {
-  background: linear-gradient(135deg, #4caf6a 0%, #d4a020 55%, #e85c20 100%);
+  background-image: linear-gradient(
+      135deg,
+      rgba(76, 175, 106, 0.75) 0%,
+      rgba(212, 160, 32, 0.7) 55%,
+      rgba(232, 92, 32, 0.78) 100%
+    ),
+    url("img/Ali-Ai.webp");
+  background-size: cover;
+  background-position: center top;
 }
 
 /* Inner overlay layout */
@@ -3489,8 +3536,16 @@ body.contact-page {
   font-family: "Anek Bangla", sans-serif;
   color: #152342;
   background:
-    radial-gradient(circle at top center, rgba(130, 102, 246, 0.12), transparent 28%),
-    radial-gradient(circle at top left, rgba(235, 198, 227, 0.18), transparent 24%),
+    radial-gradient(
+      circle at top center,
+      rgba(130, 102, 246, 0.12),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at top left,
+      rgba(235, 198, 227, 0.18),
+      transparent 24%
+    ),
     #ffffff;
   overflow-x: hidden;
 }
